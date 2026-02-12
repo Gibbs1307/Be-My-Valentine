@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amanda… 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Photo background (blurred) -->
+  <div class="bg-photo" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <!-- Floating hearts layer -->
+  <div class="float-layer" aria-hidden="true"></div>
+
+  <main class="card" aria-live="polite">
+    <div class="badge" aria-hidden="true">
+      <span class="pulse-dot"></span>
+      Special Delivery 💌
+    </div>
+
+    <div class="top-row">
+      <div class="sparkle" aria-hidden="true">✨</div>
+
+      <div class="countdown">
+        <div class="cd-title">Countdown to Valentine’s Day</div>
+        <div class="cd-grid" role="timer" aria-label="Countdown timer">
+          <div class="cd-box"><div id="cdDays" class="cd-num">—</div><div class="cd-lbl">days</div></div>
+          <div class="cd-box"><div id="cdHours" class="cd-num">—</div><div class="cd-lbl">hours</div></div>
+          <div class="cd-box"><div id="cdMins" class="cd-num">—</div><div class="cd-lbl">mins</div></div>
+          <div class="cd-box"><div id="cdSecs" class="cd-num">—</div><div class="cd-lbl">secs</div></div>
+        </div>
+        <div id="cdNote" class="cd-note"></div>
+      </div>
+    </div>
+
+    <h1 class="headline">
+      Hey <span class="name">Amanda Grajeda</span>…
+    </h1>
+
+    <p class="typewriter" id="typewriter"></p>
+
+    <h2 class="question">Will you be my Valentine? 💘</h2>
+
+    <div class="btn-row">
+      <button id="yesBtn" class="btn yes">Yes 💖</button>
+      <button id="noBtn" class="btn no" type="button">No 🙃</button>
+    </div>
+
+    <p id="message" class="message" role="status"></p>
+
+    <footer class="footer">
+      <span class="sig">Loving You Always! - Damien Gibbs</span>
+    </footer>
+  </main>
+
+  <!-- Celebration Modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Valentine plan">
+    <div class="modal-card">
+      <div class="modal-hearts" aria-hidden="true">💖 💘 💝 💗 💞</div>
+      <h2 class="modal-title">YOU SAID YES?! 😭💖</h2>
+
+      <!-- Love letter appears here -->
+      <div class="letter">
+        <div class="letter-title">A little note for you 💌</div>
+        <p class="letter-body" id="loveLetter"></p>
+      </div>
+
+      <p class="modal-text">
+        Pick your vibe, then choose a date + time:
+      </p>
+
+      <div class="choices">
+        <button class="chip" data-idea="Dinner + dessert 🍰">Dinner + dessert 🍰</button>
+        <button class="chip" data-idea="Movie night + cuddles 🎬">Movie night + cuddles 🎬</button>
+        <button class="chip" data-idea="Arcade + late-night drive 🚗">Arcade + late-night drive 🚗</button>
+        <button class="chip" data-idea="Picnic + photos 🌸">Picnic + photos 🌸</button>
+      </div>
+
+      <div class="picker">
+        <label class="pick-label">
+          Date
+          <input id="datePick" type="date" />
+        </label>
+
+        <label class="pick-label">
+          Time
+          <input id="timePick" type="time" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="copyBtn" class="btn ghost">Copy my reply 💬</button>
+        <button id="closeBtn" class="btn yes">Close 💖</button>
+      </div>
+
+      <p class="tiny" id="picked"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
