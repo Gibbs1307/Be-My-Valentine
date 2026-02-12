@@ -5,10 +5,10 @@ A tiny one-page Valentine ask.
 ## Customize the names
 Add URL parameters:
 
-?name=HerName&from=YourName
+?name=Amanda&from=Anthony
 
 Example:
-https://YOUR_USERNAME.github.io/YOUR_REPO/?name=Jade&from=Damien
+https://Gibbs1307.github.io/Be-My-Valentine/?name=Amanda&from=Anthony
 
 ## Deploy on GitHub Pages
 Repo → Settings → Pages → Deploy from a branch → main → /(root)
